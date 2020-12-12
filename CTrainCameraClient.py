@@ -39,6 +39,7 @@ class CTrainCameraClient:
         
         self.tcv.join()
         self.rki.stop()
+        self.rki.finish()
         time.sleep(3)
         
         self.tcmp.disconnect()
